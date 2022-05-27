@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    font-size: 15px;
+    margin: 0;
+    color: hsl(0, 0%, 100%);
+    font-weight: 100;
+    font-family: "Lexend Deca", "Inter", sans-serif;
+    font-weight: 400;
+}
+
+.main {
+    padding: 10px;
+}
+
+.card {
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 10px;
+    width: 20rem;
+    height: 32.3rem;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card__div-img {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card__eye {
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    z-index: 1;
+    opacity: 0;
+}
+.card__img {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 0.6rem;
+}
+.card__div-img:hover {
+    background-color: hsla(178, 100%, 50%);
+    background-image: url("./images/icon-view.svg");
+    background-position: center center;
+    background-size: 30% 30%;
+    background-repeat: no-repeat;
+
+    transition: opacity 0.9s ease-in-out;
+}
+.card__img:hover {
+    opacity: 0.4;
+}
+
+.card__title {
+    color: hsl(0, 0%, 100%);
+    font-size: 1.2rem;
+}
+
+.card__title:hover {
+    color: hsla(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.card__text {
+    color: hsla(0, 0%, 100%, 0.6);
+    font-weight: 100;
+    font-family: "Lexend Deca", sans-serif;
+    margin-top: 0;
+}
+
+.card__info {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.5px solid hsla(0, 0%, 100%, 0.6);
+    align-items: baseline;
+}
+
+.info__item {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.info__item--green {
+    color: hsla(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.info__item--gray {
+    margin-bottom: 0.5rem;
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+.info-item__icon-ether {
+    width: 0.8rem;
+    height: 1.2rem;
+}
+
+.card__author {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.card__cicle {
+    width: 2rem;
+    border: solid hsla(0, 0%, 100%, 0.6) 2px;
+    border-radius: 100%;
+}
+
+.card__text-author {
+    font-size: 0.85rem;
+    margin-left: 1rem;
+}
+
+.card__text-author:hover {
+    color: hsla(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.card__text-author--gray {
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+.destacada img {
+    width: 50px;
+    height: 50px;
+}
+
+.contenido.text-center h1:hover ~ img {
+    width: 200px; /*O lo que quieras*/
+    height: 200px; /*O lo que quieras*/
+}

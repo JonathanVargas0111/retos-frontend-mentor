@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+	border: none;
+	outline: none;
+}
+body{
+    font-family: 'Big Shoulders Display','Lexend Deca',sans-serif;
+    font-size: 15px;
+}
+.content{
+    width:80%;    
+    margin: 40px auto; 
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.card{
+    padding: 5vh 35px;
+    padding-right: 45px;    
+    display: flex;
+    flex-direction: column;
+    text-align: initial;   
+    color: hsla(0, 0%, 100%, 0.75)
+}
+.card--first{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.card--last{
+    border-bottom-left-radius:8px;
+    border-bottom-right-radius: 8px;
+}
+.card--orange{
+    background-color:  hsl(31, 77%, 52%);
+}
+
+.card--dark-cyan{
+    background-color:hsl(184, 100%, 22%);
+}
+.card--very-cyan{
+    background-color:hsl(179, 100%, 13%);
+}
+
+.card__icon{
+    margin-bottom: 3vh;
+    height: 50px;
+    width: 80px;
+}
+
+.card__title{
+    margin-bottom: 3vh;
+    font-size: 2rem;
+    color: hsl(0, 0%, 95%);
+}
+
+.card__text{
+    font-family: 'Lexend Deca','Big Shoulders Display';
+    margin-bottom: 20px;
+    font-size: 0.8rem;
+    line-height: 1.6;
+}
+.card__button{
+    font-family: 'Lexend Deca','Big Shoulders Display';
+    padding: 10px 2vw;
+    border-radius: 20px;
+    max-width: 60%;
+    font-size: .8rem;
+    font-weight: 800;
+    background-color: hsl(0, 0%, 95%);
+}
+
+.card__button:hover{
+    padding: 8px 2vw;
+    border: solid 2px hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+    background-color: transparent;
+}
+
+.card__button--orange{
+    color:  hsl(31, 77%, 52%);
+}
+
+.card__button--dark-cyan{
+    color:hsl(184, 100%, 22%);
+}
+.card__button--very-cyan{
+    color:hsl(179, 100%, 13%);
+}
+
+
+@media (min-width: 720px) {    
+    .content{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 1fr 1fr;
+        gap: 5px;
+    }
+    .card--first, .card--last{
+        border-radius: 0px;
+    }
+    .card__button{
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 1440px) {    
+    .content{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows:1fr;
+        gap: 0;
+    }
+    .card--first{
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+    .card--last{
+        border-top-right-radius: 8px;
+        border-bottom-right-radius:8px;
+    }
+    .card__text{
+        margin-bottom: 5vh;
+        font-size: 1.4rem;
+        line-height: 1.5;
+    }
+}
+
