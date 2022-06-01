@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+:root{
+    --gray-light:hsl(204, 43%, 93%);
+    --gray:hsl(218, 22%, 67%);
+    --green:rgb(10, 180, 177);
+    --green-yellow:hsl(71, 73%, 54%);
+    --height-section:300px;
+}
+*{
+    font-size: 16px;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+body{
+    background-color: var(--gray-light);
+    font-family: 'Karla', sans-serif;
+}
+
+
+.entry{
+    min-width: 300px;
+    max-width: 350px;
+    margin: 0 auto;
+}
+/*==========  section-info  ==========*/
+
+.section-info{
+    height: var(--height-section);
+    width: 100%;
+    background-color: white;
+    margin: 0;
+    padding: 1.5rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.section-info__title{
+    color: var(--green);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.section-info__subtitle{
+    color: var(--green-yellow);
+    font-size: 1rem;
+}
+.section-info__text{
+    color: var(--gray);
+    font-size: .98rem;
+    line-height: 1.6;
+}
+
+/*==========  section-subscribe  ==========*/
+
+.section-subscribe{
+   height: var(--height-section);
+   background: var(--green);
+   padding: 1.5rem;
+}
+
+.section-subscribe__title{
+    color: white;
+}
+.section-subscribe__price, .section-subscribe__text{
+    color: var(--gray-light);
+}
+.section-subscribe__price span{
+    font-size: 2rem;
+    color: white;
+}
+
+.btn-sig-up{
+    background-color: var(--green-yellow);
+    color: var(--gray-light);
+    font-weight: 400;
+    width: 100%;
+    padding: 1rem 0;
+    border-radius: 5px;
+    border: solid var(--gray-light) 1px;
+    margin-top: 2.5rem;
+    box-shadow: 0 4px 8px 0 rgba(65, 65, 65, 0.2);
+}
+
+
+
+/*==========  section-why-us  ==========*/
+
+.section-why-us{
+   height: var(--height-section);
+   background-color: var(--green);
+   opacity: 0.8;
+   padding: 1.5rem;
+   border-bottom-left-radius: 10px;
+   border-bottom-right-radius: 10px;
+}
+
+.section-why-us__title{
+    color: var(--gray-light);
+}
+.section-why-us__text{
+    color: var(--gray-light);
+    margin: 5px 0;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .main{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /*==========  entry  ==========*/
+    .entry{
+        width: 70%;
+        max-width: 800px;
+        display: grid;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section-info{
+        grid-column: span 2;
+    }
+    
+    .section-info__title{
+        font-size: 2rem;
+    }
+    .section-info__subtitle{
+        font-size: 1.5rem;
+    }
+    .section-info__text{
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+
+
+    /*==========  section-info  ==========*/
+    .section-subscribe{
+        grid-column: span 1;
+        border-bottom-left-radius: 10px;  
+        padding: 2.3rem;      
+    }
+
+    .btn-sig-up{        
+        padding: 0.8rem 0;       
+        margin-top: 1rem;
+    }
+
+
+
+    
+   /*==========  section-why-us  ==========*/
+    .section-why-us{
+        grid-column:  span 1;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 10px;
+        padding: 2.3rem;      
+        
+    }
+    
+}
+
